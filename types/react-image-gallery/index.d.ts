@@ -22,6 +22,7 @@ export interface ReactImageGalleryItem {
     original?: string;
     originalAlt?: string;
     originalTitle?: string;
+    fullscreen?: string;
     thumbnail?: string;
     thumbnailAlt?: string;
     thumbnailLabel?: string;
@@ -52,7 +53,7 @@ export interface ReactImageGalleryProps {
     disableSwipe?: boolean;
     useBrowserFullscreen?: boolean;
     preventDefaultTouchmoveEvent?: boolean;
-    onErrorImage?: string;
+    onErrorImageUrl?: string;
     indexSeparator?: string;
     thumbnailPosition?: 'top' | 'right' | 'bottom' | 'left';
     startIndex?: number;
